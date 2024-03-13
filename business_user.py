@@ -8,6 +8,8 @@ share_file_path = 'data/config.share'
 client = delta_sharing.SharingClient(share_file_path)
 shares = client.list_shares()
 
+
+
 share = shares[0]
 schema = client.list_schemas(share)[0] 
 tables = client.list_tables(schema)
